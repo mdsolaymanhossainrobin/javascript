@@ -1,0 +1,7 @@
+// some common uses of javascript in websites
+
+1. We used alert() to notify the user of something, confirm() to ask if something is OK to do and either prompt() or a form field to get user input.
+2. form error message using javascript
+3. check sign-up form if your user name is available 
+4. search box suggestions
+5. 
