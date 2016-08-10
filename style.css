@@ -29,3 +29,8 @@ div#box4{
 	top: 800px;
 	left: -400px;
 }
+
+#test{
+	border: #000 1px solid;
+	padding: 10px 40px 40px 40px;
+}
