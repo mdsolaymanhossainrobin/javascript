@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="style.css">
+	<title>javascript project 1</title>
+	<script>
+	
+		/* change background function */
+		function changeBG(el,clr){
+			var elem = document.getElementById(el);
+			elem.style.transition = "background 1.0s linear 0s";
+			elem.style.background = clr;
+		}
+		
+		/* transition fade in and faceout function */
+		function fadeOut(el){
+			var elem = document.getElementById(el);
+			elem.style.transition = "opacity 1.0s linear 0s";
+			elem.style.opacity = 0;
+		}
+		
+		function fadeIn(el){
+			var elem = document.getElementById(el);
+			elem.style.transition = "opacity 1.0s linear 0s";
+			elem.style.opacity = 1;
+		}
+		
+		/* slide open and slide close function */
+		function slideOpen(el){
+			var elem = document.getElementById(el);
+			elem.style.transition = "height 1.0s linear 0s";
+			elem.style.height = "200px";
+		}
+		
+		
+		function slideClosed(el){
+			var elem = document.getElementById(el);
+			elem.style.transition = "height 1.0s linear 0s";
+			elem.style.height = "0px";
+		}
+	
+		/* slide in and slide out function */
+		function slideIn(el){
+			var elem = document.getElementById(el);
+			elem.style.transition = "left 1.0s linear 0s";
+			elem.style.left = "0px";
+		}
+		
+		function slideOut(el){
+			var elem = document.getElementById(el);
+			elem.style.transition = "left 1.0s linear 0s";
+			elem.style.left = "-400px";
+		}
+	
+	
+	
+	</script>
+
+
+
+</head>
+<body>
+	<button onclick="changeBG('box1','#f0f');">Magenta</button>
+	<button onclick="changeBG('box1','#0c0');">Green</button>
+	<button onclick="changeBG('box1','#9dceff');">Original</button>
+	</br>
+	
+	<div id="box1"> Content in box 1 .. </div><br>
+	
+	<button onclick="fadeOut('box2');">Fade Out</button>
+	<button onclick="fadeIn('box2');">Fade In</button>
+	<div id="box2"> Content in box 2 .. </div><br>
+	
+	<button onclick="slideClosed('box3');">Slide Closed</button>
+	<button onclick="slideOpen('box3');">Slide Open</button>
+	<div id="box3"> Content in box 3 .. </div><br>
+	
+	
+	
+	<div id="box4"> Content in box 4 .. </div><br>
+	<button onclick="slideIn('box4');">Slide In</button>
+	<button onclick="slideOut('box4');">Slide out</button>
+	<br><br><br>
+
+	<p>visit www.developphp.com for better knowledge of javascript </p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
